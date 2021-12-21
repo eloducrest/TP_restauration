@@ -17,8 +17,274 @@
 </head>
 <body>
 
+    <header id="my-header" class="header-content">
+        <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark" aria-label="Ninth navbar example">
+            <div class="container-xl">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" class="img-fluid" alt="Logo du Bistro Onyxe">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nos menus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Réservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Où sommes-nous</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Notre équipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="facebook.com" class="nav-link nav-network" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="instagram.com" class="nav-link nav-network" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="twitter.com" class="nav-link nav-network" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="booking-content">
+            <div class="container container-form">
+                <div class="row row-form">
+                    <div class="booking-card">
+                        <form action="" method="post">
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label for="name">Votre nom</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label for="phone">Votre téléphone</label>
+                                    <input type="tel" name="phone" id="phone">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label for="date">Date souhaitée</label>
+                                    <input type="date" name="date" id="date">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label for="hour">Heure souhaitée</label>
+
+                                    <select name="hour" id="hour">
+                                        <option value="">Choisissez un service</option>
+                                        <option value="dejeuner-12h">Déjeuner : 12h</option>
+                                        <option value="dejeuner-12h">Déjeuner : 13h</option>
+                                        <option value="diner-20h">Diner : 20h</option>
+                                        <option value="diner-21h">Diner : 21h</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label for="numberPeople">Personnes (1-10)</label>
+                                    <input type="number" name="numberPeople" id="numberPeople" min="1" max="10">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" value="Validez !">
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+        <div class="container">
+
+            <section class="main-section menus-section">
+
+                <div class="row">
+                    <div class="col-12 col-md-6 section-title">
+                        <h2>Nos menus</h2>
+                    </div>
+                </div>
+
+                <div class="row menu-content text-center">
+                    <div class="col-12 col-md-6">
+                        <h3 class="menu-title">Menu découverte</h3>
+                        <h4 class="h5">Entrées</h4>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p class="menu-separator">* * * * * * *</p>
+                        <h4 class="h5">Plats</h4>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p class="menu-separator">* * * * * * *</p>
+                        <h4 class="h5">Desserts</h4>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                    </div>
+
+                    <div class="vertical-separator"></div>
+
+                    <div class="col-12 col-md-6">
+                        <h3 class="menu-title text-center">Menu classique</h3>
+                        <h4 class="h5">Entrées</h4>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p class="menu-separator">* * * * * * *</p>
+                        <h4 class="h5">Plats</h4>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p class="menu-separator">* * * * * * *</p>
+                        <h4 class="h5">Desserts</h4>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                        <p>Lorem Ipsum sit dolor est</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="main-section find-us-section">
+                <div class="row">
+                    <div class="col-12 col-md-6 section-title">
+                        <h2>Retrouvez-nous</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-section team-section">
+                <div class="row">
+                    <div class="col-12 col-md-6 section-title">
+                        <h2>Notre équipe</h2>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+        <!--<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5" class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="bd-placeholder-img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <img src="img/carousel/croque.jpg" alt="">
+                    </div>
+
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>L'emblématique croque-monsieur</h1>
+                            <p><a class="btn btn-lg btn-main" href="#">Réserver</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <img src="img/carousel/bowl.jpg" alt="">
+                    </div>
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Rencontrez nos bowls</h1>
+                            <p><a class="btn btn-lg btn-main" href="#">Réservez</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <img src="img/carousel/plats.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Nos plats signatures</h1>
+                            <p><a class="btn btn-lg btn-main" href="#">Réservez</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <img src="img/carousel/meat.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Nos délicieuses viandes</h1>
+                            <p><a class="btn btn-lg btn-main" href="#">Réservez</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <img src="img/carousel/drink.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Nos boissons intemporelles</h1>
+                            <p><a class="btn btn-lg btn-main" href="#">Réservez</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>-->
+    </main>
+
+
+<!--  Bootstrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- My scripts -->
+    <script src="js/script.js"></script>
+
 </body>
 </html>
