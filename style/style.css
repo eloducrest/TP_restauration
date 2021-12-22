@@ -158,20 +158,6 @@ nav.navbar {
 /* >>>>>> BOOK SECTION STYLE <<<<<< */
 /* >>>>>> BOOK SECTION STYLE <<<<<< */
 /* >>>>>> BOOK SECTION STYLE <<<<<< */
-.container-form::before {
-    display: table;
-    content: " ";
-}
-.container-form::after {
-    clear: both;
-}
-.row-form::before {
-    display: table;
-    content: " ";
-}
-.row-form::after {
-    clear: both;
-}
 .booking-card {
     position: relative;
     width: 100%;
