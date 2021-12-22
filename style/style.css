@@ -25,9 +25,21 @@ h2, h3, h4, h5, h6, p, span {
 }
 
 .btn-main {
-    color: #fff;
-    background-color: var(--main-color);
-    border-color: var(--main-color);
+    font-family: lato,sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: var(--main-color);
+    display: inline-block;
+    padding: 8px 40px;
+    position: relative;
+    border: 2px solid var(--main-color);
+    border-radius: 25px;
+}
+.btn-main:focus,
+.btn-main:focus-visible {
+    outline: none;
 }
 .main-section {
     padding: 4rem 0;
@@ -67,6 +79,10 @@ h2, h3, h4, h5, h6, p, span {
 /* >>>>>> NAVBAR STYLE <<<<<< */
 /* >>>>>> NAVBAR STYLE <<<<<< */
 /* >>>>>> NAVBAR STYLE <<<<<< */
+.active-nav {
+    color: var(--main-color)!important;
+    font-weight: bold;
+}
 nav.bg-nav-lt {
     background-color: var(--white-lt);
     transition: 0.7s;
@@ -75,12 +91,6 @@ nav.bg-nav-lt .navbar-nav .nav-link{
     color: var(--font-color-dk);
 }
 .navbar .navbar-nav .nav-link {
-    transition: 0.5s;
-}
-.navbar .navbar-nav .nav-link:focus,
-.navbar .navbar-nav .nav-link:hover {
-    font-size: calc(var(--font-size-nav) + 5px);
-    border-bottom: 2px solid var(--main-color);
     transition: 0.5s;
 }
 .navbar .navbar-nav .nav-link.nav-network:hover{
@@ -102,6 +112,9 @@ nav.navbar {
     margin-left: auto;
     align-items: center;
 }
+.navbar-nav .nav-icon-content {
+    display: flex;
+}
 .nav-link i {
     font-size: 1.3rem;
 }
@@ -121,7 +134,16 @@ nav.navbar {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateX();
+    position: relative;
+}
+#my-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -145,17 +167,202 @@ nav.navbar {
     clear: both;
 }
 .booking-card {
+    position: relative;
     width: 100%;
-    background-color: var(--white-lt);
+    background-color: var(--white-lt-transp);
     border-radius: 10px;
     overflow: hidden;
-    padding: 15px 20px;
+    padding: 40px 30px;
     -webkit-box-shadow: 0px 8px 15px 4px rgba(0,0,0,0.54);
     box-shadow: 0px 8px 15px 4px rgba(0,0,0,0.54);
 }
+.booking-card h3 {
+    text-align: center;
+    color: var(--font-color-dk);
+    margin-bottom: 1rem;
+}
 .booking-card form {
     display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
+.booking-card form > div:nth-child(-n+3) {
+    margin-bottom: 1.8rem;
+}
+.booking-card form .input-group {
+    flex-direction: column;
+    width: 90%;
+}
+.booking-card form .input-group label {
+    padding-left: 10px;
+}
+.booking-card form .input-group input {
+    padding: 10px;
+}
+.booking-card form .input-group select {
+    padding-left: 10px;
+}
+.booking-card form .input-group input,
+.booking-card form .input-group select {
+    border: none;
+    border-radius: 20px!important;
+    height: 35px;
+    background-color: var(--white-lt-transp);
+}
+.booking-card form .input-group input:focus-visible,
+.booking-card form .input-group select:focus-visible {
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+
+
+
+/* >>>>>> FIND US SECTION STYLE <<<<<< */
+/* >>>>>> FIND US SECTION STYLE <<<<<< */
+/* >>>>>> FIND US SECTION STYLE <<<<<< */
+.find-us-section .row-infos {
+    align-items: center;
+}
+.find-us-section .infos-content .find-us-infos {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.find-us-section .infos-content .find-us-infos a {
+    text-decoration: none;
+}
+.find-us-section .infos-content .find-us-infos i {
+    width: 32px;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+/* >>>>>> TEAM SECTION STYLE <<<<<< */
+/* >>>>>> TEAM SECTION STYLE <<<<<< */
+/* >>>>>> TEAM SECTION STYLE <<<<<< */
+.border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+    border: 1px solid var(--main-color) !important;
+}
+.border:hover {
+    border: 1px solid var(--main-color);
+}
+.card {
+    margin: auto;
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card0 {
+    background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") center center no-repeat;
+    background-size: 300px;
+}
+.card0:hover {
+    background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") left center no-repeat;
+    background-size: 600px;
+}
+.card0:hover h3,
+.card0:hover .fab,
+.card0:hover .team-text {
+    opacity: 1;
+}
+.card1 {
+    background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") center center no-repeat;
+    background-size: 300px;
+}
+.card1:hover {
+    background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") left center no-repeat;
+    background-size: 600px;
+}
+.card1:hover h3,
+.card1:hover .fab,
+.card1:hover .team-text {
+    opacity: 1;
+}
+.card2 {
+    background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+    background-size: 300px;
+}
+.card2:hover {
+    background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
+    background-size: 600px;
+}
+.card2:hover h3,
+.card2:hover .fab,
+.card2:hover .team-text {
+    opacity: 1;
+}
+.team-text {
+    margin: 20px;
+}
+.team-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.icons .fab,
+.team-text {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* >>>>>> CAROUSEL STYLE <<<<<< */
 /* >>>>>> CAROUSEL STYLE <<<<<< */
@@ -211,5 +418,11 @@ nav.navbar {
         margin-bottom: 4rem;
         padding-bottom: 4rem;
         border-bottom: 1px solid var(--white-lt);
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-icon-content .nav-item:not(:first-child) {
+        margin-left: 1.5rem;
     }
 }
