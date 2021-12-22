@@ -36,6 +36,12 @@ h2, h3, h4, h5, h6, p, span {
     position: relative;
     border: 2px solid var(--main-color);
     border-radius: 25px;
+    transition: 0.3s;
+}
+.btn-main:hover {
+    background-color: var(--main-color);
+    color: var(--white-lt);
+    transition: 0.3s;
 }
 .btn-main:focus,
 .btn-main:focus-visible {
@@ -411,6 +417,9 @@ nav.navbar {
 /* >>>>>> MEDIA QUERY STYLE <<<<<< */
 /* >>>>>> MEDIA QUERY STYLE <<<<<< */
 @media (max-width: 767px) {
+    .booking-card form > div:nth-child(-n+4) {
+        margin-bottom: 1.8rem;
+    }
     .vertical-separator {
         display: none;
     }
