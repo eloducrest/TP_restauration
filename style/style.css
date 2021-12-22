@@ -125,7 +125,7 @@ nav.navbar {
 /* >>>>>> HEADER PRESENTATION STYLE <<<<<< */
 /* >>>>>> HEADER PRESENTATION STYLE <<<<<< */
 #my-header {
-    background-image: url("/img/croque.jpg");
+    background-image: url("img/croque.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
